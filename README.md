@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/meilisearch/integration-guides/main/assets/logos/meilisearch_ruby.svg" alt="Meilisearch-Ruby" width="200" height="200" />
+  <img src="https://raw.githubusercontent.com/meilisearch/integration-guides/main/assets/logos/meilisearch_ruby.svg" alt="meili-Ruby" width="200" height="200" />
 </p>
 
-<h1 align="center">Meilisearch Ruby</h1>
+<h1 align="center">meili Ruby</h1>
 
 <h4 align="center">
-  <a href="https://github.com/meilisearch/meilisearch">Meilisearch</a> |
-  <a href="https://www.meilisearch.com/pricing?utm_campaign=oss&utm_source=integration&utm_medium=meilisearch-ruby">Meilisearch Cloud</a> |
+  <a href="https://github.com/meilisearch/meilisearch">meili</a> |
+  <a href="https://www.meilisearch.com/pricing?utm_campaign=oss&utm_source=integration&utm_medium=meilisearch-ruby">meili Cloud</a> |
   <a href="https://docs.meilisearch.com">Documentation</a> |
   <a href="https://discord.meilisearch.com">Discord</a> |
   <a href="https://roadmap.meilisearch.com/tabs/1-under-consideration">Roadmap</a> |
@@ -21,32 +21,32 @@
   <a href="https://ms-bors.herokuapp.com/repositories/6"><img src="https://bors.tech/images/badge_small.svg" alt="Bors enabled"></a>
 </p>
 
-<p align="center">⚡ The Meilisearch API client written for Ruby 💎</p>
+<p align="center">⚡ The meili API client written for Ruby 💎</p>
 
-**Meilisearch Ruby** is the Meilisearch API client for Ruby developers.
+**meili Ruby** is the meili API client for Ruby developers.
 
-**Meilisearch** is an open-source search engine. [Learn more about Meilisearch.](https://github.com/meilisearch/meilisearch)
+**meili** is an open-source search engine. [Learn more about meili.](https://github.com/meilisearch/meilisearch)
 
 ## Table of Contents <!-- omit in toc -->
 
 - [📖 Documentation](#-documentation)
-- [⚡ Supercharge your Meilisearch experience](#-supercharge-your-meilisearch-experience)
+- [⚡ Supercharge your meili experience](#-supercharge-your-meilisearch-experience)
 - [🔧 Installation](#-installation)
 - [🚀 Getting started](#-getting-started)
-- [🤖 Compatibility with Meilisearch](#-compatibility-with-meilisearch)
+- [🤖 Compatibility with meili](#-compatibility-with-meilisearch)
 - [💡 Learn more](#-learn-more)
 - [⚙️ Contributing](#️-contributing)
 
 ## 📖 Documentation
 
-This readme contains all the documentation you need to start using this Meilisearch SDK.
+This readme contains all the documentation you need to start using this meili SDK.
 
-For general information on how to use Meilisearch—such as our API reference, tutorials, guides, and in-depth articles—refer to our [main documentation website](https://docs.meilisearch.com/).
+For general information on how to use meili—such as our API reference, tutorials, guides, and in-depth articles—refer to our [main documentation website](https://docs.meilisearch.com/).
 
 
-## ⚡ Supercharge your Meilisearch experience
+## ⚡ Supercharge your meili experience
 
-Say goodbye to server deployment and manual updates with [Meilisearch Cloud](https://www.meilisearch.com/pricing?utm_campaign=oss&utm_source=integration&utm_medium=meilisearch-ruby). No credit card required.
+Say goodbye to server deployment and manual updates with [meili Cloud](https://www.meilisearch.com/pricing?utm_campaign=oss&utm_source=integration&utm_medium=meilisearch-ruby). No credit card required.
 
 ## 🔧 Installation
 
@@ -64,21 +64,21 @@ source 'https://rubygems.org'
 gem 'meilisearch'
 ```
 
-### Run Meilisearch <!-- omit in toc -->
+### Run meili <!-- omit in toc -->
 
-There are many easy ways to [download and run a Meilisearch instance](https://docs.meilisearch.com/learn/getting_started/quick_start.html#setup-and-installation).
+There are many easy ways to [download and run a meili instance](https://docs.meilisearch.com/learn/getting_started/quick_start.html#setup-and-installation).
 
 For example, using the `curl` command in your [Terminal](https://itconnect.uw.edu/learn/workshops/online-tutorials/what-is-a-terminal/):
 
 ```sh
-# Install Meilisearch
+# Install meili
 curl -L https://install.meilisearch.com | sh
 
-# Launch Meilisearch
+# Launch meili
 ./meilisearch --master-key=masterKey
 ```
 
-NB: you can also download Meilisearch from **Homebrew** or **APT** or even run it using **Docker**.
+NB: you can also download meili from **Homebrew** or **APT** or even run it using **Docker**.
 
 ## 🚀 Getting started
 
@@ -100,7 +100,7 @@ documents = [
   { id: 5, title: 'Moana', genres: ['Fantasy', 'Action']},
   { id: 6, title: 'Philadelphia', genres: ['Drama'] },
 ]
-# If the index 'movies' does not exist, Meilisearch creates it when you first add the documents.
+# If the index 'movies' does not exist, meili creates it when you first add the documents.
 index.add_documents(documents) # => { "uid": 0 }
 ```
 
@@ -111,7 +111,7 @@ With the `uid`, you can check the status (`enqueued`, `processing`, `succeeded` 
 #### Basic Search <!-- omit in toc -->
 
 ``` ruby
-# Meilisearch is typo-tolerant:
+# meili is typo-tolerant:
 puts index.search('carlo')
 ```
 Output:
@@ -174,7 +174,7 @@ index.update_filterable_attributes([
 
 You only need to perform this operation once.
 
-Note that Meilisearch will rebuild your index whenever you update `filterableAttributes`. Depending on the size of your dataset, this might take time. You can track the process using the [tasks](https://docs.meilisearch.com/reference/api/tasks.html#get-tasks)).
+Note that meili will rebuild your index whenever you update `filterableAttributes`. Depending on the size of your dataset, this might take time. You can track the process using the [tasks](https://docs.meilisearch.com/reference/api/tasks.html#get-tasks)).
 
 Then, you can perform the search:
 
@@ -204,9 +204,9 @@ JSON output:
 }
 ```
 
-## 🤖 Compatibility with Meilisearch
+## 🤖 Compatibility with meili
 
-This package guarantees compatibility with [version v1.x of Meilisearch](https://github.com/meilisearch/meilisearch/releases/latest), but some features may not be present. Please check the [issues](https://github.com/meilisearch/meilisearch-ruby/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+label%3Aenhancement) for more info.
+This package guarantees compatibility with [version v1.x of meili](https://github.com/meilisearch/meilisearch/releases/latest), but some features may not be present. Please check the [issues](https://github.com/meilisearch/meilisearch-ruby/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+label%3Aenhancement) for more info.
 
 ## 💡 Learn more
 
@@ -227,4 +227,4 @@ If you want to know more about the development workflow or want to contribute, p
 
 <hr>
 
-**Meilisearch** provides and maintains many **SDKs and Integration tools** like this one. We want to provide everyone with an **amazing search experience for any kind of project**. If you want to contribute, make suggestions, or just know what's going on right now, visit us in the [integration-guides](https://github.com/meilisearch/integration-guides) repository.
+**meili** provides and maintains many **SDKs and Integration tools** like this one. We want to provide everyone with an **amazing search experience for any kind of project**. If you want to contribute, make suggestions, or just know what's going on right now, visit us in the [integration-guides](https://github.com/meilisearch/integration-guides) repository.

@@ -1,6 +1,6 @@
 # Contributing <!-- omit in toc -->
 
-First of all, thank you for contributing to Meilisearch! The goal of this document is to provide everything you need to know in order to contribute to Meilisearch and its different integrations.
+First of all, thank you for contributing to meili! The goal of this document is to provide everything you need to know in order to contribute to meili and its different integrations.
 
 <!-- MarkdownTOC autolink="true" style="ordered" indent="   " -->
 
@@ -15,8 +15,8 @@ First of all, thank you for contributing to Meilisearch! The goal of this docume
 ## Assumptions
 
 1. **You're familiar with [GitHub](https://github.com) and the [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)(PR) workflow.**
-2. **You've read the Meilisearch [documentation](https://docs.meilisearch.com) and the [README](/README.md).**
-3. **You know about the [Meilisearch community](https://docs.meilisearch.com/learn/what_is_meilisearch/contact.html). Please use this for help.**
+2. **You've read the meili [documentation](https://docs.meilisearch.com) and the [README](/README.md).**
+3. **You know about the [meili community](https://docs.meilisearch.com/learn/what_is_meilisearch/contact.html). Please use this for help.**
 
 ## How to Contribute
 
@@ -50,8 +50,8 @@ Each PR should pass the tests to be accepted.
 
 ```bash
 # Tests
-curl -L https://install.meilisearch.com | sh # download Meilisearch
-./meilisearch --master-key=masterKey --no-analytics # run Meilisearch
+curl -L https://install.meilisearch.com | sh # download meili
+./meilisearch --master-key=masterKey --no-analytics # run meili
 bundle exec rspec
 ```
 
@@ -134,7 +134,7 @@ Some notes on GitHub PRs:
 
 ## Release Process (for the internal team only)
 
-Meilisearch tools follow the [Semantic Versioning Convention](https://semver.org/).
+meili tools follow the [Semantic Versioning Convention](https://semver.org/).
 
 ### Automation to Rebase and Merge the PRs <!-- omit in toc -->
 
